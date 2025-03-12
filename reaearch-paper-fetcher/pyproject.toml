@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "research_paper_fetcher"
+version = "0.1.0"
+description = "Fetch PubMed papers with pharma/biotech-affiliated authors"
+authors = ["Piyush <my.email@example.com>"]
+license = ""
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+get-papers-list = "research_paper_fetcher.cli:main"
